@@ -1,0 +1,87 @@
+/* src/styles/Home.css */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: radial-gradient(circle, #29ABE2 0%, #004369 100%); /* Un degradado radial más profundo */
+    padding: 40px;
+    text-align: center;
+    color: white; /* Texto blanco para contrastar con el fondo oscuro */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Añade una sombra al texto */
+    letter-spacing: 0.05em; /* Un poco de espacio entre letras */
+  }
+  
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+    opacity: 0.8; /* Un poco de transparencia */
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button {
+    background-color: #FFD166; /* Un amarillo vibrante para los botones */
+    color: #004369; /* Texto oscuro para contraste */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px; /* Bordes más redondeados */
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Transiciones para interactividad */
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  }
+  
+  button:hover {
+    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo para los enlaces como botones (opcional) */
+  a button {
+    display: inline-block; /* Para que los estilos de botón funcionen correctamente */
+  }
+  
+  /* Media query para pantallas más pequeñas */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+  
+    button {
+      padding: 12px 25px;
+      font-size: 1rem;
+      margin: 10px;
+    }
+  }
+  
+  /* Media query para pantallas aún más pequeñas */
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,175 @@
+/* Ajustes globales para asegurar que todos los elementos tengan el box-sizing correcto */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Un degradado de fondo bonito */
+}
+
+.login-container {
+  width: 90%; /* Ocupa la mayoría del ancho en pantallas pequeñas */
+  max-width: 500px; /* Limita el ancho máximo en pantallas grandes */
+  padding: 20px; /* Reduce el padding en pantallas pequeñas */
+}
+
+.login-card {
+  background-color: #fff;
+  padding: 20px; /* Reduce el padding en pantallas pequeñas */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Reduce el margen inferior en pantallas pequeñas */
+}
+
+.avatar-container {
+  background-color: #e0f2f7; /* Un color de fondo claro para el avatar */
+  border-radius: 50%;
+  padding: 12px; /* Reduce el padding en pantallas pequeñas */
+  margin-bottom: 12px; /* Reduce el margen inferior en pantallas pequeñas */
+}
+
+.avatar-circle {
+  background-color: #1976d2; /* Un color primario para el círculo del avatar */
+  width: 50px; /* Reduce el tamaño del avatar en pantallas pequeñas */
+  height: 50px; /* Mantiene la proporción cuadrada */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem; /* Usa rem para ajustar con el tamaño de fuente raíz */
+}
+
+.avatar-circle svg {
+  width: 60%; /* Ajusta el tamaño del icono dentro del avatar */
+  height: 60%;
+}
+
+.login-title {
+  color: #333;
+  font-size: 1.8rem; /* Reduce ligeramente el tamaño del título en pantallas pequeñas */
+  margin-top: 0;
+  text-align: center; /* Centra el título en pantallas más pequeñas */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px; /* Reduce el margen inferior entre los campos */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+  font-size: 0.9rem; /* Reduce ligeramente el tamaño de la etiqueta */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px; /* Reduce el padding en pantallas pequeñas */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-button {
+  background-color: #ffa726;
+  color: white;
+  padding: 10px 15px; /* Reduce el padding del botón */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #f57c00;
+}
+
+/* Media query para pantallas más pequeñas (ej: tablets y móviles) */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-card {
+    padding: 25px;
+  }
+
+  .login-header {
+    margin-bottom: 20px;
+  }
+
+  .avatar-container {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .avatar-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .login-title {
+    font-size: 1.6rem;
+  }
+
+  .input-group {
+    margin-bottom: 12px;
+  }
+
+  .input-group label {
+    font-size: 0.85rem;
+  }
+
+  .input-group input {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .login-button {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Media query para pantallas aún más pequeñas (ej: móviles) */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .login-card {
+    padding: 20px;
+  }
+
+  .login-title {
+    font-size: 1.4rem;
+  }
+  
+}
